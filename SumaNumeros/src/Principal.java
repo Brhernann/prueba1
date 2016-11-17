@@ -16,13 +16,25 @@ public class Principal {
         
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("Ingrese número 1");
-        int n1 = sc.nextInt();
+        int n1 = 0, n2 = 0, suma = 0;
         
-        System.out.println("Ingrese número 2");
-        int n2 = sc.nextInt();
+        try{
+            System.out.println("Ingrese número 1: ");
+            n1 = sc.nextInt();
+        }
+        catch(Exception ee){
+            System.out.println("Ingrese solo números!");
+        }
         
-        int suma = n1+n2;
+        try{
+            System.out.println("Ingrese número 2: ");
+            n2 = sc.nextInt();
+        }
+        catch(Exception ee){
+            System.out.println("Ingrese solo números!");
+        }
+        
+        suma = n1+n2;
         
         System.out.println("La suma es: " + suma);
         
